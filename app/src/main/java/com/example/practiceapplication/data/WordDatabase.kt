@@ -8,7 +8,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import kotlinx.coroutines.CoroutineScope
 
-@Database(entities = arrayOf(Word::class),version = 1,exportSchema = false)
+@Database(entities = arrayOf(Word::class),version = /*2*/1,exportSchema = false)
 public abstract class WordDatabase:RoomDatabase() {
     abstract fun wordDao():WordDao
 
