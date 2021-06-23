@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700"
+        >
+        <EditText
+            android:hint="Enter"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="@color/purple_700"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edittext"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="text"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittext" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintsecond"
+            android:layout_width="match_parent"
+            android:paddingTop="60dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/addbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="add"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/deletebutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="delete"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/addbutton" />
+
+            <Button
+                android:id="@+id/addlistbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="add list"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/deletebutton" />
+
+            <Button
+                android:id="@+id/deletelistbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="delete list"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/addlistbutton" />
+
+            <Button
+                android:id="@+id/searchbutton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="search"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/deletelistbutton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
